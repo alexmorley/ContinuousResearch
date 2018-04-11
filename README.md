@@ -1,1 +1,1 @@
-![Continuous Research Diagram](/CCW18.svg)
+![Continuous Research Diagram](/img/CCW18.svg)
