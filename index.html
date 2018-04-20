@@ -1,109 +1,107 @@
-<p><span id="anchor"></span>Continuous Research</p>
-<p><span id="anchor-1"></span>Setting Integration as the Default</p>
-<p></p>
-<p><span id="anchor-2"></span>Contributors/Authors (please add your name if you have something to add!)</p>
+<h1><span id="anchor"></span>Continuous Research</h1>
+<h2><span id="anchor-1"></span>Setting Integration as the Default</h2>
 <ul>
-<li>Alex Morley</li>
+    Alex Morley
 </ul>
-<p></p>
-<p><span id="anchor-3"></span>Introduction</p>
+
+<h3><span id="anchor-3"></span>Introduction</h3>
 <p>Science today is built almost entirely on a culture of competition. Formal integration of research from different groups working on the same topic happens very rarely. When it does happen, for example when results/algorithms are explicitly compared, these results are often highly biased<sup>1</sup> or incomplete.</p>
-<p></p>
-<p>Continuous Research is the concept that all scientific outputs, every new dataset, technique, and hypothesis, can be can be integrated such a way that they are re-evaluated against all related research. In developer-speak we could say that we’re “bringing Continuous Delivery to research”.</p>
-<p></p>
-<p><span id="anchor-4"></span>What is Continuous Delivery?</p>
-<p>The requirement to maintain large, distributed, and complex projects, along with the high availability of low-cost computing has driven the widespread adoption of “Continuous Delivery” in software development. The mechanics can be complex, but the principle is simple: automated tests are frequently run against the software so that even when a brand new feature is added, you can be sure that the software is still performing correctly and (at least close to) functional enough to be released immediately. </p>
-<p></p>
-<p><span id="anchor-5"></span>How is research done now?</p>
-<p>You collect a dataset, you do some analysis to test a hypothesis, and then try to integrate that hypothesis with current theories. Great, there’s your paper, submit it to Journal of Sciency Things and move onto the next project. But what happens when someone else collects a dataset that could also be used to test that hypothesis? Or someone working in the mathematics department writes a better version of your analysis. Best case scenario they might use your code/data in their papers, otherwise they might just mention or cite you. But the work will never be truly integrated, and each paper might be related to tens/hundreds of other pieces of research, meaning that manually finding and using all of the code/data associated with their work will not always be possible, even if it is open.</p>
-<p></p>
-<p><span id="anchor-6"></span>How does that change under Continuous Research?</p>
-<p>Continuous Research is a framework we re-evaluate <em>all</em> hypotheses when any new data, analysis, or pipeline becomes available. In such a way, we obtain a live view of how much support there is for a particular theory, and under what conditions such a theory really holds. The big picture being that we want to try and integrate related research as tightly as possible, rather than the loose collection of papers that is the <em>de facto </em>standard for a body of evidence.</p>
-<p></p>
+
+<p>Continuous Research is the concept that all scientific outputs, every new dataset, technique, and hypothesis, can be can be integrated such a way that they are re-evaluated against all related research. In developer-speak we could say that we're "bringing Continuous Delivery to research".</p>
+
+<h4><span id="anchor-4"></span>What is Continuous Delivery?</h4>
+<p>The requirement to maintain large, distributed, and complex projects, along with the high availability of low-cost computing has driven the widespread adoption of "Continuous Delivery" in software development. The mechanics can be complex, but the principle is simple: automated tests are frequently run against the software so that even when a brand new feature is added, you can be sure that the software is still performing correctly and (at least close to) functional enough to be released immediately. </p>
+
+<h4><span id="anchor-5"></span>How is research done now?</h4>
+<p>You collect a dataset, you do some analysis to test a hypothesis, and then try to integrate that hypothesis with current theories. Great, there's your paper, submit it to Journal of Sciency Things and move onto the next project. But what happens when someone else collects a dataset that could also be used to test that hypothesis? Or someone working in the mathematics department writes a better version of your analysis. Best case scenario they might use your code/data in their papers, otherwise they might just mention or cite you. But the work will never be truly integrated, and each paper might be related to tens/hundreds of other pieces of research, meaning that manually finding and using all of the code/data associated with their work will not always be possible, even if it is open.</p>
+
+<h4><span id="anchor-6"></span>How does that change under Continuous Research?</h4>
+<p>Continuous Research is a framework we re-evaluate <em>all</em> hypotheses when any new data, analysis, or pipeline becomes available. In such a way, we obtain a live view of how much support there is for a particular theory, and under what conditions such a theory really holds. The big picture being"that we want to try and integrate related research as tightly as possible, rather than the loose collection of papers that is the <em>de facto </em>standard for a body of evidence.</p>
+
+<h3>Vision</h3>
 <p><span id="anchor-7"></span>Prototypical Workflow</p>
-<p><img src="Pictures/10000201000002F400000237AB7BFD873853C6F2.png" width="570" height="427" /></p>
-<p><span id="anchor-8"></span>Use Cases</p>
-<p><span id="anchor-9"></span>Adding a “full” study - “The Virtual Paper”</p>
-<p></p>
-<p><span id="anchor-10"></span><strong>Dataset</strong> (neural activity + the position of the animal)</p>
-<p>–&gt;</p>
-<p><strong>Analysis</strong> (divide the environment into a grid then count the number of “spikes” each neuron fires at each place in the grid)</p>
-<p>–&gt;</p>
+<p><img src="img/CCW18.svg" width="570" height="427" /></p>
+
+<h4><span id="anchor-8"></span>Use Cases</h4>
+<p>Let's imagine someone has performed the following simplified study.</p>
+
+<p><span id="anchor-10"></span><strong>Dataset</strong> (Neural activity &amp; the position of the animal)</p>
+<p><strong>Analysis</strong> (Divide the environment into a grid then count the number of "spikes" each neuron fires at each place in the grid)</p>
 <p><strong>Hypothesis</strong> (Some neurons will show some specificity at a particular location in this grid)</p>
-<p>–&gt;</p>
 <p><strong>Theory</strong> (Place cells provide animals with a map that enables them to navigate the world around them)</p>
-<p></p>
-<p><span id="anchor-11"></span>Adding a new dataset - <em>“At the Coalface”</em></p>
-<p>Someone does a similar set recordings but taken from a different region of the brain. All the analyses are automatically repeated. We don’t find place cells here. We refine the hypothesis to “Neurons in the hippocampus will show specificity to a particular location” and update our theory.</p>
-<p></p>
-<p><span id="anchor-12"></span>Adding a new analytical pipeline / node - <em>“Have you tried...”</em></p>
+
+<p>Now we consider what could happen when new research is done in the area, and see how the principles of CR might our understanding to be rapidly updated</p>
+<p><strong>New Dataset</strong></p>
+<p>Someone does a similar set recordings but taken from a different region of the brain. All the analyses are automatically repeated. We don't find place cells here. We refine the hypothesis to "Neurons in the hippocampus will show specificity to a particular location" and update our theory.</p>
+
+<p><strong>New Analysis</strong></p>
 <p>Someone else thinks that counting the number of spikes might not be a great way of determining locational specificity of neuronal firing. Perhaps we should instead determine the information content that a neuron has about the position of the animal. This analysis is then <em>automatically applied to all compatible datasets</em>. It turns out only a subset of the neurons we thought were place cells actually contain information about where the animal could be.</p>
-<p></p>
-<p><span id="anchor-13"></span>Adding a new analytical pipeline / node II - <em>“Have you tried...”</em></p>
-<p>Some thinks that your results were an artifact of the way you identified which spikes came from which neuron (known as “spike-sorting”). 1) They provide a better spike-sorting method. <em>All analyses are re-run using this method</em>. We can now see whether this makes a difference. Or 2) They can already see that this study has been re-run with every available spike-sorting algorithm and the results seem robust to this choice.</p>
-<p></p>
-<p><span id="anchor-14"></span>Adding a new visualisation - <em>“No Sunglasses Required”</em></p>
-<p>TODO</p>
-<p></p>
-<p><span id="anchor-15"></span>Adding a new hypothesis / Editing a theory - “<em>The Comments Section”</em></p>
-<p>TODO</p>
-<p></p>
-<p></p>
-<p><span id="anchor-16"></span>Prototype/Visual Demonstration</p>
-<p></p>
-<p></p>
-<p><span id="anchor-17"></span>Ethos</p>
-<p>While technology continues to improve, the methods underlying much of research haven’t quite entered the 21st Century. The pace of change is now increasing which could be a great thing, but I am concerned that we are still baking in many out of date values into our new practices. “Open Science” is not really open unless it is truly participatory. Small steps are great, and we encourage everyone to get started in whatever way is most accessible to them. Nonetheless simply putting the code you used for a piece of research isn’t fulfilling the potential of what Open could be. But if your code is running live somewhere and anyone can come along and play with the parameters to see what effect that would have had on the outcome of your experiments - that’s getting a bit closer. If there is a low-barrier to someone recreating your visualisations in a way that’s accessible to them even better. In a technical sense open for me additionally nesseciates <em>accessibility</em>, <em>extensibility</em> and <em>interoperability</em>. And this project is about showing how powerful research can be when it meets these criteria.</p>
-<p></p>
-<p><span id="anchor-18"></span>Discussion</p>
+
+<p><strong>New Pre-processing</strong></p>
+<p>Some thinks that your results were an artifact of the way you identified which spikes came from which neuron (known as "spike-sorting"). 1) They provide a better spike-sorting method. <em>All analyses are re-run using this method</em>. We can now see whether this makes a difference. Or 2) They can already see that this study has been re-run with every available spike-sorting algorithm and the results seem robust to this choice.</p>
+
+<p><strong>New Visualisation</strong></p>
+<p>A colormap was used to plot the rate of a neuron depending on the location of the animal. Someone chose "jet" for the original figure but it's more clear using "hot". When this change is made, both versions of record will be available for people to see and decide what works for them</p>
+
+<p><strong>New Hypothesis</strong></p>
+Someone might disagree that neurons showing spacial specificity at a particular location is evidence for the theory that place cells help animals to navigate. They can then dispute the link between the hypothesis and this theory. Or they can propose a new hypothesis which would test the theory, perhaps "disruption of these cells should prevent the animal from navigating effectively".
+
+
+<!--<p>Prototype/Visual Demonstration</p>-->
+
+
+<h3><span id="anchor-17"></span>Ethos</h3>
+<p>While technology continues to improve, the methods underlying much of research haven't quite entered the 21st Century. The pace of change is now increasing which could be a great thing, but I am concerned that we are still baking in many out of date values into our new practices. "Open Science" is not really open unless it is truly participatory. Small steps are great, and we encourage everyone to get started in whatever way is most accessible to them. Nonetheless simply putting the code you used for a piece of research isn't fulfilling the potential of what Open could be. But if your code is running live somewhere and anyone can come along and play with the parameters to see what effect that would have had on the outcome of your experiments - that's getting a bit closer. If there is a low-barrier to someone recreating your visualisations in a way that's accessible to them even better. In a technical sense open for me additionally nesseciates <em>accessibility</em>, <em>extensibility</em> and <em>interoperability</em>. And this project is about showing how powerful research can be when it meets these criteria.</p>
+
+<h3><span id="anchor-18"></span>Discussion</h3>
 <p><strong>What Problems Exactly can we Solve?</strong></p>
 <p><em>Independent &amp; Explicit comparisons of Model/Algorithm/Software performance</em></p>
-<p>In every field there seems to be at least one problem for which the current paradigm is “look here how our solution to this problem which we have been tuning for a year compares against all these other ones we just downloaded”. With this way of thinking it becomes very difficult to really determine what works best. Within Continuous Research each new algorithm would automatically be benchmarked against all the previous algorithms, with all the previous datasets.</p>
-<p></p>
+<p>In every field there seems to be at least one problem for which the current paradigm is "look here how our solution to this problem which we have been tuning for a year compares against all these other ones we just downloaded". With this way of thinking it becomes very difficult to really determine what works best. Within Continuous Research each new algorithm would automatically be benchmarked against all the previous algorithms, with all the previous datasets.</p>
+
 <p><em>Exact Provenance tracking for the effects of changes to models / datasets</em></p>
 <p>Not only are all changes to all parts transparent &amp; version controlled, but we also have the ability to see what the impact of each change was to both the final output, and each intermediate stage.</p>
-<p></p>
+
 <p><em>Truly Participatory Science</em></p>
 <p>The more modularisation we can achieve the more we can lower the barrier for people to contribute to one aspect of a project without knowing the ins and outs of the other parts. And they can see in real time what the impact of there contributions are.</p>
-<p></p>
-<p><em>“Incremental Progress is Still Progress”</em><sup><em>2</em></sup></p>
-<p>How many people have had their research put down because it was “incremental”? There is very little that annoys me more than this attitude because no research exists in a vacuum and ultimately if we keep making incremental progress then we will move forward just fast enough! The difficulty lies in that currently incremental improvements are lost because publishers, funders, and even other scientists undervalue these advances. With Continuous Research all relevant research is explicitly linked improving efficiency by preventing incremental improvements getting lost and/or repeated unnecessarily.</p>
-<p></p>
+
+<p><em>"Incremental Progress is Still Progress"</em><sup><em>2</em></sup></p>
+<p>How many people have had their research put down because it was "incremental"? There is very little that annoys me more than this attitude because no research exists in a vacuum and ultimately if we keep making incremental progress then we will move forward just fast enough! The difficulty lies in that currently incremental improvements are lost because publishers, funders, and even other scientists undervalue these advances. With Continuous Research all relevant research is explicitly linked improving efficiency by preventing incremental improvements getting lost and/or repeated unnecessarily.</p>
+
 <p><em>Fail Fast</em><sup><em>3</em></sup><strong> </strong></p>
-<p>We are reducing the “knowledge cycle” - the time it takes to get feedback and release a project so that you and others can start building on top of it from months to &lt; 1 day.</p>
-<p></p>
-<p><span id="anchor-19"></span>Technical Details</p>
+<p>We are reducing the "knowledge cycle" - the time it takes to get feedback and release a project so that you and others can start building on top of it from months to &lt; 1 day.</p>
+
+<h3><span id="anchor-19"></span>Technical Details</h3>
 <p><span id="anchor-20"></span>Implementation</p>
-<p>A large subset of the implementation details for such a project overlap with MLStudy, a “low-friction data-analysis platform in the web-browser” being developed by Jeremy Magland at the Flatiron Institute. </p>
-<p></p>
+<p>A large subset of the implementation details for such a project overlap with MLStudy, a "low-friction data-analysis platform in the web-browser" being developed by Jeremy Magland at the Flatiron Institute. </p>
+
 <p>Key Features:</p>
 <ul>
-<li>Run-Anywhere.<br />
-Entirely based on web technologies (javascript + nodejs) the framework for MLStudy is entirely hardware agnostic.<br />
-</li>
-<li>Compute-Anywhere.<br />
-Ability to run any study anywhere, being it a local, remote, cloud &amp;/or cluster based.<br />
-</li>
-<li>Open Source<br />
-</li>
-<li>Flexible<br />
-Studies are just JSON files, pipelines are just JS scripts, datasets are just JSON files with a checksum and a pointer to the data. All aspects have been built with extensibility/flexibility in mind.<br />
-</li>
+    <li>Run-Anywhere.<br />
+        Entirely based on web technologies (javascript + nodejs) the framework for MLStudy is entirely hardware agnostic.<br />
+    </li>
+    <li>Compute-Anywhere.<br />
+        Ability to run any study anywhere, being it a local, remote, cloud &amp;/or cluster based.<br />
+    </li>
+    <li>Open Source<br />
+    </li>
+    <li>Flexible<br />
+        Studies are just JSON files, pipelines are just JS scripts, datasets are just JSON files with a checksum and a pointer to the data. All aspects have been built with extensibility/flexibility in mind.<br />
+    </li>
 </ul>
-<p></p>
+
 <p><span id="anchor-21"></span>De-centralization</p>
 <p>With MLStudy we already have most of the ingredients we need for decentralisation.</p>
 <ul>
-<li><em>Easy</em> - Running your own instance of MLStudy is as easy as `npm install; npm start`</li>
-<li><em>Compute-Anywhere</em> - Analyses can currently be run anywhere the user has access to with either docker, or the specific packages for a given computation, installed.</li>
-<li><em>Seeding</em> Currently anyone can donate a given amount of your local compute resources as a “seed”. Support for distributing a single pipeline/analysis across seeds is also possible.<br />
-</li>
+    <li><em>Easy</em> - Running your own instance of MLStudy is as easy as `npm install; npm start`</li>
+    <li><em>Compute-Anywhere</em> - Analyses can currently be run anywhere the user has access to with either docker, or the specific packages for a given computation, installed.</li>
+    <li><em>Seeding</em> Currently anyone can donate a given amount of your local compute resources as a "seed". Support for distributing a single pipeline/analysis across seeds is also possible.<br />
+    </li>
 </ul>
-<p>The main missing part is distributed/de-centralised storage of data. At the moment data has to be stored locally or pulled from a cloud server. However luckily we don’t have to solve this problem ourselves thanks to the Dat Project. Support for <em>dat </em>data sources will be the key next step towards decentralisation. From there it will also be possible to experiment with how well the whole project could run as a peer-to-peer network.</p>
-<p></p>
-<p></p>
+<p>The main missing part is distributed/de-centralised storage of data. At the moment data has to be stored locally or pulled from a cloud server. However luckily we don't have to solve this problem ourselves thanks to the Dat Project. Support for <em>dat </em>data sources will be the key next step towards decentralisation. From there it will also be possible to experiment with how well the whole project could run as a peer-to-peer network.</p>
+
+
 <p><span id="anchor-22"></span>References</p>
 <ol style="list-style-type: decimal">
-<li>Ref? </li>
-<li>Kirstie Whitaker - CollabW18 Talk</li>
+    <li>Ref? </li>
+    <li>Kirstie Whitaker - CollabW18 Talk</li>
 </ol>
