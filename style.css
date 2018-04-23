@@ -20,3 +20,7 @@ p, li {
     padding-left: 15px;
     max-width: 210mm;
 }
+
+ol {
+    font-weight: normal;
+}
