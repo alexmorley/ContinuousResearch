@@ -16,4 +16,7 @@ h4 {
 
 p, li {
     font-size: 14;
+    padding-right: 15px;
+    padding-left: 15px;
+    max-width: 210mm;
 }
