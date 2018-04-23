@@ -1,3 +1,8 @@
+<head>
+     <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+
 <h1><span id="anchor"></span>Continuous Research</h1>
 <h2><span id="anchor-1"></span>Setting Integration as the Default</h2>
 <ul>
@@ -38,7 +43,7 @@
 <p>Someone else thinks that counting the number of spikes might not be a great way of determining locational specificity of neuronal firing. Perhaps we should instead determine the information content that a neuron has about the position of the animal. This analysis is then <em>automatically applied to all compatible datasets</em>. It turns out only a subset of the neurons we thought were place cells actually contain information about where the animal could be.</p>
 
 <p><strong>New Pre-processing</strong></p>
-<p>Some thinks that your results were an artifact of the way you identified which spikes came from which neuron (known as "spike-sorting"). 1) They provide a better spike-sorting method. <em>All analyses are re-run using this method</em>. We can now see whether this makes a difference. Or 2) They can already see that this study has been re-run with every available spike-sorting algorithm and the results seem robust to this choice.</p>
+<p>Someone thinks that your results were an artifact of the way you identified which spikes came from which neuron (known as "spike-sorting"). 1) They provide a better spike-sorting method. <em>All analyses are re-run using this method</em>. We can now see whether this makes a difference. Or 2) They can already see that this study has been re-run with every available spike-sorting algorithm and the results seem robust to this choice.</p>
 
 <p><strong>New Visualisation</strong></p>
 <p>A colormap was used to plot the rate of a neuron depending on the location of the animal. Someone chose "jet" for the original figure but it's more clear using "hot". When this change is made, both versions of record will be available for people to see and decide what works for them</p>
@@ -70,6 +75,20 @@ Someone might disagree that neurons showing spacial specificity at a particular 
 <p><em>Fail Fast</em><sup><em>3</em></sup><strong> </strong></p>
 <p>We are reducing the "knowledge cycle" - the time it takes to get feedback and release a project so that you and others can start building on top of it from months to &lt; 1 day.</p>
 
+<p><strong>Why Continuous Research <em>is</em> Decentralized Research</strong><p>
+Let's take a look at the features that define the current centralised system, and see how they would be inverted under this framework.
+
+<p><em>Single/Few Points of Control</em></p>
+<p>Currently a handful of journals, funders, and senior scientists have the majority say in what is good science and what isn't. They make all of the decisions that matter, for better or worse.</p>
+
+<p>With CR, the validity of a piece of work isn't decided at one point in time (on publication) or by a few people but is continuously re-assessed, both by the automatic re-running of pipelines and data as well as via the facility for comments and discussions of how strong evidence for the original hypotheses were.</p>
+
+<p><em>High Costs / Barrier to Entry</em></p>
+<p>The cost of completing a "formally recognised" scientific project at the moment is astronomical. There are fee's for reading papers, obtaining data, software for analysis, compute for analysis and of course the infamous and misleadingly named "Article Processing Charge". Moreover, there is increasingly the expectation that a single piece of scientific work invoke a wide range of skills or techniques. All of these costs can be minimised, but only to a certain degree, and often have tradeoffs in terms of the impact your work can have.</p>
+
+<p>Continuous Research is totally modular, so you only need to submit one piece of the puzzle in order for your work to have impact. As we mentioned before, this lowers both the skill and the cost barrier to contributing to research. If you can't collect data yourself you can either search for existing datasets OR you can simply write the pipeline which will be immediately ready for when the data is available. All analytical pipelines are available and compatible which might reduce the need for proprietry software and compute resources can be distributed across seeders to facilitate demanding processes.</p>
+
+<p><em> </em></p>
 <h3><span id="anchor-19"></span>Technical Details</h3>
 <p><span id="anchor-20"></span>Implementation</p>
 <p>A large subset of the implementation details for such a project overlap with MLStudy, a "low-friction data-analysis platform in the web-browser" being developed by Jeremy Magland at the Flatiron Institute. </p>

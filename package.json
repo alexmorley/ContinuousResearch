@@ -1,0 +1,26 @@
+{
+  "name": "continuousresearch",
+  "version": "1.0.0",
+  "description": "![Continuous Research Diagram](/img/CCW18.svg)",
+  "main": "app.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alexmorley/ContinuousResearch.git"
+  },
+  "author": "Alexander Morley",
+  "license": " CC-BY-4.0",
+  "bugs": {
+    "url": "https://github.com/alexmorley/ContinuousResearch/issues"
+  },
+  "homepage": "https://github.com/alexmorley/ContinuousResearch#readme",
+  "dependencies": {
+    "express": "^4.16.3"
+  }
+}
