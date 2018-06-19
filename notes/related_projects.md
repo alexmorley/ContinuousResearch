@@ -14,3 +14,6 @@ Pachyderm - https://github.com/pachyderm/pachyderm
 ### Integrated Research
 OKM - https://openknowledgemaps.org/
 OKI - https://okfn.org/
+
+### Misc
+[Developing a modern data workflow for living data](https://www.biorxiv.org/content/early/2018/06/12/344804) HT [@Ethan White](https://twitter.com/ethanwhite/status/1009062242938179584)
